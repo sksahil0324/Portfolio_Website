@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Shaik | Data Analyst & Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .section {
+            padding: 80px 0;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+        .skill-badge {
+            background: #e7f1ff;
+            color: #0d6efd;
+            padding: 8px 15px;
+            border-radius: 50px;
+            margin: 5px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        .project-card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .cert-badge {
+            background: #d1e7dd;
+            color: #0a3622;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        .link-space {
+            background: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .link-space:hover {
+            background: #e9ecef;
+            border-color: #0d6efd;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0d6efd;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+        }
+        .counter-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-code-square me-2"></i>Sahil Shaik
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white text-center py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold mb-3">Sahil Basheer Shaik</h1>
+                    <p class="lead mb-4">
+                        Data Analyst & Web Developer
+                    </p>
+                    <p class="mb-4">
+                        Transforming complex data into actionable insights and building efficient web applications
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="https://www.linkedin.com/in/sahil-shaik24" class="btn btn-light btn-lg">
+                            <i class="bi bi-linkedin me-2"></i> LinkedIn
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-envelope me-2"></i> Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                  <div class="bg-white text-dark p-4 rounded shadow">
+                    <div class="d-flex justify-content-center mb-3">
+                      <img src="ZEE_3354.jpg" alt="Profile" class="rounded-circle shadow-sm" style="width: 120px; height: 120px; object-fit: cover;">
+                    </div>
+                    <h4 class="text-center">Personal Information</h4>
+                    <ul class="list-unstyled text-center">
+                      <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> New Panvel, Navi Mumbai, India</li>
+                      <li class="mb-2"><i class="bi bi-envelope me-2"></i> s3ahii324@gmail.com</li>
+                      <li class="mb-2"><i class="bi bi-phone me-2"></i> +91-8169870210</li>
+                      <li class="mb-0"><i class="bi bi-github me-2"></i> <a href="https://github.com/sahii-shaik24" target="_blank" class="text-decoration-none">sahii-shaik24</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="lead">
+                        Passionate developer and data analyst with expertise in creating efficient web applications and data-driven solutions.
+                    </p>
+                    <p>
+                        With over 2 years of experience, I specialize in transforming complex data into actionable insights and building responsive web applications that deliver exceptional user experiences. My approach combines technical excellence with business understanding to create solutions that drive real value.
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
+                        <div class="text-center">
+                            <div class="counter-number">2+</div>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="counter-number">10+</div>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="counter-number">5+</div>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="bg-white p-4 rounded shadow">
+                        <h3 class="mb-4">Hobbies & Interests</h3>
+                        <div class="d-flex flex-wrap gap-3">
+                            <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3">Programming</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3">Chess</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3">Reading</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3">Gaming</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3">Badminton</span>
+                        </div>
+                        
+                        <h3 class="mt-4 mb-3">Leadership</h3>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Technical Head - ISTE-RAIT</h5>
+                                <p class="card-text">Organized and supervised workshops, coding competitions, and technical tests by leading a team of 30 members.</p>
+                                <p class="card-text mb-0">Managed logistics, mentorship, and collaboration with faculty and industry partners.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Education</h2>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title">B.Tech in Computer Engineering</h4>
+                            <h5 class="text-primary">Ramrao Adik Institute of Technology</h5>
+                            <p class="text-muted">Minor: Data Science</p>
+                            <p><strong>CGPA:</strong> 8.03/10</p>
+                            <p><strong>Duration:</strong> 2022 - 2026</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title">12th Grade</h4>
+                            <h5 class="text-primary">New Horizon Public School</h5>
+                            <p><strong>Percentage:</strong> 68%</p>
+                            <p><strong>Duration:</strong> 2020 - 2022</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title">10th Grade</h4>
+                            <h5 class="text-primary">New Horizon Public School</h5>
+                            <p><strong>Percentage:</strong> 87.4%</p>
+                            <p><strong>Duration:</strong> 2007 - 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Work Experience</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">Java Developer Intern</h4>
+                                <span class="badge bg-primary">July 2024 – September 2024</span>
+                            </div>
+                            <h5 class="text-primary">Next24tech Technology & Services (Remote)</h5>
+                            <ul class="mt-3">
+                                <li>Built a resume builder with export and template customization used by 100+ users</li>
+                                <li>Developed a real-time encrypted live chat app with multimedia support</li>
+                                <li>Created a dynamic data visualization tool handling 5000+ entries with low latency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">Machine Learning Intern</h4>
+                                <span class="badge bg-primary">September 2024 – August 2024</span>
+                            </div>
+                            <h5 class="text-primary">SkillCraft Technology (Remote)</h5>
+                            <ul class="mt-3">
+                                <li>Created deep learning models with scikit-learn and pandas achieving 85% accuracy</li>
+                                <li>Implemented automated feature engineering and evaluation pipeline</li>
+                                <li>Reduced model testing time by 40% through process optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-header bg-white">
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-chat-square-text text-primary fs-1"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">TextTrinity: Unified NLP System</h3>
+                            <p class="card-text">
+                                AI neural network-based NLP system combining text summarization, keywords extraction, and text-to-speech to enhance accessibility.
+                            </p>
+                            <div class="d-flex flex-wrap">
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">Python</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">Flask</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">spaCy</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">NLTK</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">gTTS</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                          <div class="link-space">
+                            <a href="https://github.com/sksahil0324" target="_blank">
+                                <i class="bi bi-github me-2"></i> View on GitHub
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-header bg-white">
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-robot text-primary fs-1"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">AI Assistant with Face and Emotion Detection</h3>
+                            <p class="card-text">
+                                AI assistant that recognizes users' faces and determines emotional conditions with real-time facial analysis.
+                            </p>
+                            <div class="d-flex flex-wrap">
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">Python</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">TensorFlow</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">OpenCV</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">Deep Learning</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                          <div class="link-space">
+                            <a href="https://github.com/sksahil0324" target="_blank">
+                                <i class="bi bi-github me-2"></i> View on GitHub
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <div class="card-header bg-white">
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-chat-dots text-primary fs-1"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">WECHAT: Messaging Web App</h3>
+                            <p class="card-text">
+                                Real-time messaging web application with complete frontend and backend architecture.
+                            </p>
+                            <div class="d-flex flex-wrap">
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">HTML</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">CSS</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">JavaScript</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary m-1">SQL</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                          <div class="link-space">
+                            <a href="https://github.com/sksahil0324" target="_blank">
+                                <i class="bi bi-github me-2"></i> View on GitHub
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Technical Skills</h2>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Languages</h3>
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">Java</span>
+                                <span class="skill-badge">C</span>
+                                <span class="skill-badge">HTML/CSS</span>
+                                <span class="skill-badge">JavaScript</span>
+                                <span class="skill-badge">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Frameworks & Tools</h3>
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <span class="skill-badge">TensorFlow</span>
+                                <span class="skill-badge">Flask</span>
+                                <span class="skill-badge">React</span>
+                                <span class="skill-badge">Git</span>
+                                <span class="skill-badge">Docker</span>
+                                <span class="skill-badge">Twilio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Technologies</h3>
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <span class="skill-badge">Deep Learning</span>
+                                <span class="skill-badge">AI</span>
+                                <span class="skill-badge">Machine Learning</span>
+                                <span class="skill-badge">NLP</span>
+                                <span class="skill-badge">Data Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Certifications</h2>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">AWS Cloud Practitioner</h5>
+                            <p class="card-text">GeeksforGeeks</p>
+                            <div class="link-space">
+                              <a href="https://media.geeksforgeeks.org/courses/certificates/30ac3346e59a4e7c4393fefc76cc04f3.pdf" target="_blank">
+                                  <i class="bi bi-award me-2"></i> View Certificate
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Vision with Azure</h5>
+                            <p class="card-text">Microsoft</p>
+                            <div class="link-space">
+                              <a href="" target="_blank">
+                                  <i class="bi bi-award me-2"></i> View Certificate
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Azure AI Essentials</h5>
+                            <p class="card-text">Microsoft</p>
+                            <div class="link-space">
+                              <a href="https://www.linkedin.com/learning/certificates/9b25dc44a0e9039a471c06646e23d4ea56349ab7e3d92450fcb1963445c23b02?trk=share_certificate" target="_blank">
+                                  <i class="bi bi-award me-2"></i> View Certificate
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">IT Leadership</h5>
+                            <p class="card-text">ServiceNow</p>
+                            <div class="link-space">
+                              <a href="https://www.linkedin.com/learning/certificates/546d86d2a7f780adefc7849286acc6d5ff6baddbc5b17b97fc979af094a37ff5?trk=share_certificate" target="_blank">
+                                  <i class="bi bi-award me-2"></i> View Certificate
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Designer Core</h5>
+                            <p class="card-text">Alteryx</p>
+                            <div class="link-space">
+                              <a href="https://www.credly.com/badges/00816ec2-f269-4763-93f9-2e0b1fc2197d/public_url" target="_blank">
+                                  <i class="bi bi-award me-2"></i> View Certificate
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analytics Essentials</h5>
+                            <p class="card-text">Cisco Networking Academy</p>
+                            <div class="link-space">
+                              <a href="https://www.credly.com/badges/f0f3eaee-ec8b-473d-9419-412e9c361d60/public_url" target="_blank">
+                                  <i class="bi bi-award me-2"></i> View Certificate
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Get In Touch</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-geo-alt text-primary me-3 fs-4"></i>
+                                    <div>
+                                        <h5>Location</h5>
+                                        <p class="mb-0">New Panvel, Navi Mumbai, India</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-envelope text-primary me-3 fs-4"></i>
+                                    <div>
+                                        <h5>Email</h5>
+                                        <p class="mb-0">s3ahii324@gmail.com</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-phone text-primary me-3 fs-4"></i>
+                                    <div>
+                                        <h5>Phone</h5>
+                                        <p class="mb-0">+91-8169870210</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-4">
+                                <h5 class="mb-3">Connect with me</h5>
+                                <div class="d-flex gap-3">
+                                    <a href="https://www.linkedin.com/in/sahil-shaik24/" class="btn btn-outline-dark">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/sksahil0324" class="btn btn-outline-dark">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-dark">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                      <h3 class="card-title mb-4 text-center text-primary">
+                        <i class="bi bi-envelope-paper-fill me-2"></i>Send a Message
+                      </h3>
+                      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Replace with your actual Web3Forms access key -->
+                        <input type="hidden" name="access_key" value="ef3451d3-311d-4898-9449-3327dac2caef">
+                
+                        <!-- Optional redirect after success -->
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                          <label for="name"><i class="bi bi-person-fill me-2"></i>Your Name</label>
+                        </div>
+                
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                          <label for="email"><i class="bi bi-envelope-fill me-2"></i>Email Address</label>
+                        </div>
+                
+                        <div class="form-floating mb-4">
+                          <textarea class="form-control" id="message" name="message" placeholder="Leave your message here" style="height: 150px;" required></textarea>
+                          <label for="message"><i class="bi bi-chat-left-text-fill me-2"></i>Your Message</label>
+                        </div>
+                
+                        <button type="submit" class="btn btn-outline-primary w-100">
+                          <i class="bi bi-send-fill me-2"></i>Send Message
+                        </button>
+                
+                        <div id="formFeedback" class="mt-3 text-center text-success d-none">
+                          <i class="bi bi-check-circle-fill me-2"></i>Your message has been sent!
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h3>Sahil Shaik</h3>
+                    <p class="mb-0">Data Analyst & Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
